@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 10px;
+}
+
+
+  @media only screen and (max-width: 600px) {
+
+    *{
+      font-size: 5px;
+    }
+  
+    h1{
+      font-family: 'Barlow', sans-serif;
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 13rem;
+      line-height: 13rem;
+      color: #313131;
+      margin: 7rem;
+      margin-left: 6rem;
+    }
+    
+    h1 span{
+      color:white;
+      font-size: 13rem;
+      line-height: 13rem;
+    }
+    
+    .father{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-right: 6rem;
+      margin-left: 6rem;
+      align-items: center
+    }
+
+    
+    
+    .children{
+      flex-direction: row;
+    }
+    
+    .plus a{
+    text-decoration: none;
+    
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15rem;
+    
+    color: #FFC700;
+    
+    }
+    
+    .yellow_intro{
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 5rem;
+      line-height: 10rem;
+    
+      color: #FFC700;
+    }
+    
+    ul{
+      list-style: none;
+    }
+    
+    li{
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 3.2rem;
+      letter-spacing: 0.00624rem;
+      
+      color: #FFFFFF;
+  }
+  
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+  *{
+    font-size: 7.5px;
+  }
+  /* body {
+    background-color: green;
+  } */
+
+  h1{
+    font-family: 'Barlow', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 13rem;
+    line-height: 13rem;
+    color: #313131;
+    margin: 7rem;
+    margin-left: 6rem;
+  }
+  
+  h1 span{
+    color:white;
+    font-size: 13rem;
+    line-height: 13rem;
+  }
+  
+  .father{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    align-items: center;
+  }
+  
+  .children{
+    flex-direction: row;
+  }
+  
+  .plus a{
+  text-decoration: none;
+  
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15rem;
+  
+  color: #FFC700;
+  
+  }
+  
+  .yellow_intro{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+    line-height: 10rem;
+  
+    color: #FFC700;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  li{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.00624rem;
+  
+    color: #FFFFFF;
+}
+}
+
+@media only screen and (min-width: 768px) {
+
+
+  h1{
+    font-family: 'Barlow', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 12rem;
+    line-height: 12rem;
+    color: white;
+    margin: 1rem;
+    margin-left: 6rem;
+    line-height: 120px;
+
+    /* Amarillo */
+    -webkit-text-stroke: 1px #F9B233;
+    -webkit-text-stroke-color: #F9B233;
+  }
+  
+  
+  .father{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    align-items: flex-end;
+  }
+  
+  .children{
+    flex-direction: row;
+  }
+  
+  .plus a{
+  text-decoration: none;
+  
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15rem;
+  
+  color: #EB593B;
+  
+  }
+  
+  .yellow_intro{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6rem;
+    line-height: 8rem;
+  
+    color: #1F3D8A;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  li{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.00625rem;
+  
+    color:#F8C4C5;
+    font-weight: 900;
+}
+
+}

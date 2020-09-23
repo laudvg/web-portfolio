@@ -175,6 +175,7 @@
     font-size: 12rem;
     line-height: 12rem;
     color: white;
+
     margin: 1rem;
     margin-top: 0px;
     margin-left: 6rem;
@@ -224,36 +225,33 @@
     list-style: none;
   }
   
-  li{
+  .children li{
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
     font-size: 2.5rem;
     line-height: 2.9rem;
     letter-spacing: 0.00625rem;
-  
     color:#F8C4C5;
     font-weight: 900;
   }
 
-  .profile{
-    height: 75rem;
+  .description{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 6rem;
-
+    margin:6rem 6rem 0rem 6rem
   }
 
   .profile_pic{
-    width: 50rem;
+    width: 40rem;
   }
 
   h2{
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 6rem;
     color: black;
     width: 75%;
@@ -273,4 +271,20 @@
     color: #F9B233;
   }
 
+  .soft-skills ul{
+    list-style: none;
+    font-size: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  .soft-skills li{
+    list-style-type: none;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    color: #1F3D8A;
+    text-align: right;
+    margin-right: 6rem;
+    /* line-height: 3rem; */
+  }
 }

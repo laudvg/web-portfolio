@@ -5,11 +5,18 @@
   font-family: Playfair Display;
 }
 
-  .background{
+  /* .background{
     background-image: url(./img/small_pink.png), url(./img/big_pink.png);
     background-position: bottom, bottom;
     background-repeat: no-repeat, no-repeat;
     background-size: 100%, 100%;
+  } */
+
+  .background{
+    background-image: url(./img/fondo_pink1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:100%;
   }
 
   @media only screen and (max-width: 600px) {
@@ -35,7 +42,7 @@
       line-height: 13rem;
     }
     
-    .father{
+    .intro-box{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -113,7 +120,7 @@
     line-height: 13rem;
   }
   
-  .father{
+  .intro-box{
     display: flex;
     justify-content: space-between;
     margin-right: 6rem;
@@ -182,57 +189,73 @@
   }
   
   
-  .father{
+  .intro-box{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-right: 6rem;
     margin-left: 6rem;
     align-items: baseline;
   }
-  
-  .children{
+
+  .box2{
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
   }
   
   .plus a{
   text-decoration: none;
-  
   font-style: italic;
   font-weight: 300;
   font-size: 15rem;
-  
   color: #EB593B;
-  
   }
   
-  .yellow_intro{
-      font-style: normal;
+  .iam-description{
+    font-style: normal;
     font-weight: normal;
     font-size: 6rem;
     line-height: 8rem;
-  
     color: #1F3D8A;
+    width: 50%;
   }
   
-  ul{
+  .list{
     list-style: none;
+    margin-bottom: 50px;
   }
   
-  .children li{
+  .list li{
     font-style: normal;
     font-weight: normal;
-    font-size: 2.5rem;
-    line-height: 2.9rem;
+    font-size: 2.5rem;git 
     letter-spacing: 0.00625rem;
-    color:#F8C4C5;
+    color:#f58486;
     font-weight: 900;
   }
+
+  .intro-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+/* segunda parte */
 
   .description{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:6rem 6rem 0rem 6rem
+    margin: 6rem;
+  }
+
+  .profile{
+    background-image: url(./img/fondo_2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .profile_pic{
@@ -240,7 +263,7 @@
   }
 
   h2{
-      font-style: normal;
+    font-style: normal;
     font-weight: normal;
     font-size: 3.5rem;
     line-height: 6rem;
@@ -249,14 +272,15 @@
   }
 
   h2 span{
-      font-style: normal;
-    font-weight: normal;
+    font-style: normal;
     font-size: 4rem;
     line-height: 6rem;
     color: #EB593B;
   }
 
   .interested{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
     margin-top: 10rem;    
     color: #F9B233;
   }
@@ -269,13 +293,15 @@
 
   .soft-skills li{
     list-style-type: none;
-      font-style: normal;
+    font-style: normal;
     font-weight: bold;
     color: #1F3D8A;
     text-align: right;
     margin-right: 6rem;
     /* line-height: 3rem; */
   }
+
+/* tercera parte */
 
   .projects{
     display: flex;
@@ -292,9 +318,11 @@
   .project img{
     max-width: 100%;
   }
-  
+
   .project-name{
     font-family: 'Barlow', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
   }
 
   .project-description{
@@ -304,9 +332,16 @@
 
   .project-description a{
     font-family: 'Barlow', sans-serif;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 2rem;
     color: #EB593B;
     line-height: 6rem;
+  }
+
+  .pback{
+    background-image: url(./img/fondo_2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }

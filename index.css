@@ -1,10 +1,15 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: white;
   font-size: 10px;
 }
 
+  .background{
+    background-image: url(./img/small_pink.png), url(./img/big_pink.png);
+    background-position: bottom, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+  }
 
   @media only screen and (max-width: 600px) {
 
@@ -35,7 +40,7 @@
       justify-content: space-between;
       margin-right: 6rem;
       margin-left: 6rem;
-      align-items: center
+      align-items: baseline;
     }
 
     
@@ -115,7 +120,7 @@
     justify-content: space-between;
     margin-right: 6rem;
     margin-left: 6rem;
-    align-items: center;
+    align-items: baseline;
   }
   
   .children{
@@ -171,6 +176,7 @@
     line-height: 12rem;
     color: white;
     margin: 1rem;
+    margin-top: 0px;
     margin-left: 6rem;
     line-height: 120px;
 
@@ -185,7 +191,7 @@
     justify-content: space-between;
     margin-right: 6rem;
     margin-left: 6rem;
-    align-items: flex-end;
+    align-items: baseline;
   }
   
   .children{
@@ -228,6 +234,43 @@
   
     color:#F8C4C5;
     font-weight: 900;
-}
+  }
+
+  .profile{
+    height: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6rem;
+
+  }
+
+  .profile_pic{
+    width: 50rem;
+  }
+
+  h2{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: black;
+    width: 75%;
+  }
+
+  h2 span{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #EB593B;
+  }
+
+  .interested{
+    margin-top: 10rem;    
+    color: #F9B233;
+  }
 
 }

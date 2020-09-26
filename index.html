@@ -3,97 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laura Vivas Main</title>
+  <title>Laura Vivas Home</title>
   <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,500i,900,900i|Playfair+Display:400,400i&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
 </head>
 <body>
   
-  <div class="background">
+  <div class="first-block">
       <div class="hello">
-        <h1>Hello!</h1>
-        <h1>I'm<br/>Laura Vivas</h1>
+        <h1 class="animate__animated animate__fadeIn">Hello!</h1>
+        <h1 class="name"  id="im" style="display:none">I'm</h1>
+        <h1 class="name" id="name" style="display:none">Laura Vivas</h1>
+
       </div>
-      <div class="intro-box">
-          <h2 class="iam-description">and I am a<br/> Fullstack Developer<br/> located in Madrid</h2>
+      <div class="intro-box" id="intro" style="display:none">
+
+        <div class="box1">
+          <p class="iam-description">and I<br/></p> 
+          <p class="typing">hi</p>
+        </div>
           
-          <div class="box2">
-            <ul class="list">
-              <li>Javascript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Typescript</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>Mongo DB</li>
-            </ul>
-            <h3 class="plus">
-              <a href="https://www.linkedin.com/in/lauravivasgamboa/">+</a>
-            </h3>
-          </div>
+        <div class="box2">
+          <a class="plus" href="./content.html">+</a>
+        </div>
       </div>
   </div>
-  <div class="profile">
-    <div class="description">
-      <div class="about">
-        <h2>
-          Passionate about developing and designing functional tools that improve
-          people’s quality of life. Open to change,
-          creative, able to bring new solutions 
-          <span>and innovate.</span>
-        </h2>
-        <h2 class="interested">
-          Interested in design, music and arts.
-        </h2>
-      </div>
-      <div>
-        <img class="profile_pic" src="./img/laura_profile.jpg" alt="Laura">
-      </div>
-    </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>   
+  AOS.init({
+    offset: 400,
+    duration: 5000,
+  }); 
+</script>
 
-    <div class="soft-skills">
-      <li>
-        <ul>Ease of learning.</ul>
-        <ul>Ability to work in teams.</ul>
-        <ul>Persistence and perseverance.</ul>
-        <ul>Good communication skills.</ul>
-        <ul>Creativity.</ul>
-      </li>
-    </div>
-  </div>
-
-<div class="pback">
-    <div class="projects">
-      <div class="project">
-        <h2 class="project-name">Burguer Kills</h2>
-        <p class="project-description">
-          Videogame <br>
-          November 2019 <br>
-          <a href="">See More</a>
-        </p>
-        <img src="./img/fgportada.png" alt="">
-      </div>
-      <div class="project">
-        <h2 class="project-name">Until Sunrise</h2>
-        <p class="project-description">
-          Fullstack Web Api<br>
-          November 2019 <br>
-          <a href="https://laudvg.github.io/BurguerKills/">See More</a>
-        </p>
-        <img src="./img/until_portada.png" alt="">
-      </div>
-      <div class="project">
-        <h2 class="project-name">Friendzone</h2>
-        <p class="project-description">
-          Fullstack Web Api<br>
-          November 2019 <br>
-          <a href="https://hello-friendzone.herokuapp.com/">See More</a>
-        </p>
-        <img src="./img/friendzone_portada.png" alt="">
-      </div>
-    </div>
-</div>
-
+<script src="index.js"></script>
 </body>
+
 </html>

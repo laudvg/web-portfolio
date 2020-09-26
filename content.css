@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url(./img/fondo-website.jpg);
+  background-image: url(./img/fondo-website-completo.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -17,20 +17,25 @@ body{
 @media only screen and (min-width: 768px) {
 
   .hello{
-    margin-top: 10rem;
-  }
-
-  .hello h1{
     font-family: 'Barlow', sans-serif;
     font-style: italic;
     font-weight: bolder;
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 12rem;
+    line-height: 12rem;
     color: white;
 
     margin: 1rem;
     margin-top: 0px;
     margin-left: 6rem;
+    line-height: 120px;
+
+    /* Amarillo */
+    -webkit-text-stroke: 1px #F9B233;
+    -webkit-text-stroke-color: #F9B233;
+  }
+
+  .name{
+    font-size: 20rem;
   }
   
   .intro-box{
@@ -65,44 +70,5 @@ body{
   color: #EB593B;
   }
   
-  .lenguajes{
-    list-style: none;
-    margin-bottom: 0;
-  }
   
-  .lenguajes li{
-    font-style: normal;
-    font-size: 2rem; 
-    letter-spacing: 0.00625rem;
-    color:#f58486;
-    font-weight: 900;
-  }
-  
-}
-
-/*effects */
-.typing{
-  font-size: 6rem;
-  line-height: 8rem;
-  color: #1F3D8A;
-  position: relative;
-}
-
-.typing::after {
-  /* display: block; */
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  border-right:2px solid tomato;
-  animation: blink 0.75s infinite ease;
-}
-
-@keyframes blink{
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
 }

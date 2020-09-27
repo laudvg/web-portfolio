@@ -2,9 +2,6 @@ setTimeout(function(){
   document.getElementById('im').style.display = 'block';
 },2000);
 
-setTimeout(function(){
-  document.getElementById('name').style.display = 'block';
-},2500);
 
 setTimeout(function(){
   document.getElementById('intro').style.display = 'block';

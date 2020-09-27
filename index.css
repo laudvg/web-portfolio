@@ -17,29 +17,33 @@ body{
 
 @media only screen and (min-width: 768px) {
 
-  .hello{
-    margin-top: 10rem;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 22rem;
-    color: white;
-   
+  .first-block{
     position: absolute;
     top:20%;
     left: 15%;
     width: 100%;
   }
 
-  .box2{
+  .hello{
+    margin-top: 10rem;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 22rem;
+    color: white;
+  }
+
+  .intro-box{
     position: absolute;
-    left: 20px;
+    top:60%;
+    left: 37%;
+    width: 100%;
   }
 
   .name{
     font-style: italic;
     font-weight: bolder;
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 6rem;
+    line-height: 6rem;
     color: white;
   }
 
@@ -51,10 +55,31 @@ body{
   .iam-description{
     font-style: normal;
     font-weight: normal;
-    font-size: 6rem;
-    line-height: 8rem;
-    color: #1F3D8A;
+    font-size: 4rem;
+    line-height: 5.8rem;
+    color: #F8C4C5;
     font-family: Playfair Display;
+    position: absolute;
+  }
+
+  .typing{
+    font-family: Playfair Display;
+    font-size: 4rem;
+    line-height: 5.8rem;
+    color: #F8C4C5;
+    position: relative;
+    width: 100%;
+    left: 10rem;
+  }
+  
+  .typing::after {
+    /* display: block; */
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right:2px solid tomato;
+    animation: blink 0.75s infinite ease;
   }
   
   .plus{
@@ -72,23 +97,7 @@ body{
 }
 
 /*effects */
-.typing{
-  font-family: Playfair Display;
-  font-size: 6rem;
-  line-height: 8rem;
-  color: #1F3D8A;
-  position: relative;
-}
 
-.typing::after {
-  /* display: block; */
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  border-right:2px solid tomato;
-  animation: blink 0.75s infinite ease;
-}
 
 @keyframes blink{
   0% {

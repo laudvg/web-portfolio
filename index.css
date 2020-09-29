@@ -9,41 +9,47 @@ body{
   background-image: url(./img/fondo_main.png);
   background-size: 100vw;
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 100vw;
   overflow-x: hidden;
 
 }
 
+@media only screen and (max-width: 960px) {
 
-@media only screen and (min-width: 768px) {
-
-  .first-block{
-    position: absolute;
-    top:20%;
-    left: 15%;
-    width: 100%;
+  *{
+    font-size: 5px;
   }
 
+  body{
+    background-image: url(./img/fondo_main.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden
+  }
+
+  .first-block{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
   .hello{
-    margin-top: 10rem;
     font-style: italic;
     font-weight: bolder;
     font-size: 22rem;
     color: white;
-  }
-
-  .intro-box{
-    position: absolute;
-    top:60%;
-    left: 37%;
-    width: 100%;
+    color: tomato;
   }
 
   .name{
     font-style: italic;
     font-weight: bolder;
     font-size: 6rem;
-    line-height: 6rem;
     color: white;
   }
 
@@ -51,34 +57,106 @@ body{
     font-family: Playfair Display;
   }
 
+  #intro{
+    display: flex;
+    flex-direction: row;
+  }
 
   .iam-description{
+    width: fit-content;
     font-style: normal;
     font-weight: normal;
-    font-size: 4rem;
-    line-height: 5.8rem;
+    font-size: 3rem;
     color: #F8C4C5;
     font-family: Playfair Display;
-    position: absolute;
   }
 
   .typing{
     font-family: Playfair Display;
-    font-size: 4rem;
-    line-height: 5.8rem;
+    font-size: 3rem;
     color: #F8C4C5;
-    position: relative;
     width: 100%;
     left: 10rem;
   }
   
   .typing::after {
-    /* display: block; */
     content: "";
-    position: absolute;
     width: 1px;
     height: 100%;
-    border-right:2px solid tomato;
+    border-right: 2px solid tomato;
+    animation: blink 0.75s infinite ease;
+  }
+  
+  .plus{
+  position: absolute;
+  bottom: 8rem;
+  left: 45%;
+  width: 100%;
+
+  text-decoration: none;
+  font-style: italic;
+  font-size: 15rem;
+  color: #EB593B;
+  }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+
+  .first-block{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .hello{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 22rem;
+    color: white;
+  }
+
+  .name{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 6rem;
+    color: white;
+  }
+
+  .int-desc{
+    font-family: Playfair Display;
+  }
+
+  #intro{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .iam-description{
+    width: fit-content;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    color: #F8C4C5;
+    font-family: Playfair Display;
+  }
+
+  .typing{
+    font-family: Playfair Display;
+    font-size: 3rem;
+    color: #F8C4C5;
+    width: 100%;
+    left: 10rem;
+  }
+  
+  .typing::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid tomato;
     animation: blink 0.75s infinite ease;
   }
   
@@ -93,7 +171,7 @@ body{
   font-size: 15rem;
   color: #EB593B;
   }
-  
+
 }
 
 /*effects */

@@ -1,11 +1,15 @@
 setTimeout(function(){
-  document.getElementById('im').style.display = 'block';
-},2000);
+  document.getElementById('im').style.visibility = 'visible';
+},1500);
 
 
 setTimeout(function(){
-  document.getElementById('intro').style.display = 'block';
-},4000);
+  document.getElementById('intro').style.visibility = 'visible';
+},3000);
+
+setTimeout(function(){
+  document.getElementById("plus").classList.add("animate__flash"); 
+},6000);
 
 const texts = ["am a web developer", "love design", "am in Madrid"];
 let count = 0;
@@ -37,8 +41,8 @@ let rounds = 0;
 
   function pause(){
   clearTimeout(var2);
-  // document.querySelector(".typing").style.animation='none';
   };
+
   if (rounds > 99){
     pause();
   }

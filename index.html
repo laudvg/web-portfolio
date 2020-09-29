@@ -14,13 +14,13 @@
 <body>
   
   <div class="first-block">
-
-      <h1 class="hello animate__animated animate__fadeIn">Hello!</h1>
-
+      <div>
+        <h1 class="hello animate__animated animate__fadeIn">Hello!</h1>
+      </div>
       <div class="intro-box">
-        <h1 class="name" id="im" style="display:none">I'm Laura Vivas</h1>
-        <div id="intro" style="display:none">
-          <p class="iam-description">and I<br/></p> 
+          <h1 class="name" id="im" style="visibility:hidden">I'm Laura Vivas</h1>
+        <div id="intro" style="visibility:hidden">
+          <p class="iam-description">and I&nbsp;<br/></p> 
           <div>
             <p class="typing">hi</p>
           </div>
@@ -29,14 +29,11 @@
   </div>
 
   <div>
-    <a class="plus" href="./content.html">+</a>
+    <a id="plus" class="plus animate__animated" href="./content.html">+</a>
   </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>   
-  AOS.init({
-    offset: 400,
-    duration: 2000,
-  }); 
+  AOS.init(); 
 </script>
 
 <script src="index.js"></script>

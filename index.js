@@ -9,9 +9,9 @@ setTimeout(function(){
 
 setTimeout(function(){
   document.getElementById("plus").classList.add("animate__flash"); 
-},6000);
+},9000);
 
-const texts = ["am a web developer", "love design", "am in Madrid"];
+const texts = ["am in Madrid", "love design", "am a web developer"];
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -27,7 +27,7 @@ let rounds = 0;
 
   currentText = texts[count];
 
-  letter =currentText.slice(0, ++index);
+  letter = currentText.slice(0, ++index);
 
   document.querySelector(".typing").textContent = letter; 
   if(letter.length === currentText.length){
@@ -35,7 +35,7 @@ let rounds = 0;
     index = 0;
   }
 
-  var2 = setTimeout(type, 200);
+  var2 = setTimeout(type, 100);
 
   rounds += 1;
 
@@ -43,11 +43,14 @@ let rounds = 0;
   clearTimeout(var2);
   };
 
-  if (rounds > 99){
+  if (rounds > 81){
     pause();
+
   }
 
 }())
+
+
 
 
 

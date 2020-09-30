@@ -20,16 +20,7 @@ body{
     font-weight: bolder;
     font-size: 12rem;
     line-height: 12rem;
-    color: white;
-
-    margin: 1rem;
-    margin-top: 0px;
-    margin-left: 6rem;
-    line-height: 120px;
-
-    /* Amarillo */
-    -webkit-text-stroke: 1px #F9B233;
-    -webkit-text-stroke-color: #F9B233;
+    color: #3B1F8A;
   }
   
   
@@ -84,7 +75,7 @@ body{
     font-weight: normal;
     font-size: 2.5rem;git 
     letter-spacing: 0.00625rem;
-    color:#f58486;
+    color: #f58486;
     font-weight: 900;
   }
 
@@ -171,38 +162,43 @@ body{
   }
 
   .project{
-    width:30%;
+    margin-top: 2rem;
   }
 
-  .project img{
+  .project-text{
+    position: absolute;
+  }
+  
+  .project-image{
+    visibility: hidden;
     width: 75rem;
     height: 25rem;
     object-fit: cover;
+    opacity: 0%;
   }
 
-  .project-name{
-    font-family: 'Barlow', sans-serif;
-    font-style: italic;
-    font-weight: bolder;
+  .project-text:hover + .project-image {
+    visibility: visible;
+    opacity: 75%;
+    transition: 0.1s;
   }
+
 
   .project-description{
-    font-size: 2rem;
-    /* line-height: 6rem; */
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: right;
   }
 
-  .project-description a{
+  .link{
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
     font-size: 2rem;
-    color: #EB593B;
-    line-height: 6rem;
+    color: #3B1F8A;
   }
 
-  .pback{
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
 
 }
+
+/* animations */

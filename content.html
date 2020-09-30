@@ -30,50 +30,57 @@
       </div>
     </div>
 
-    <div class="pback" >
-      <div class="projects" >
+    <div>
+      <div class="projects">
         <h1>PROJECTS</h1>
-        <div class="project" data-aos="fade-left"  data-aos-offset="500" data-aos-easing="ease-in-out" data-aos-mirror="true">
-          <h2 class="project-name">Burguer Kills</h2>
-          <p class="project-description">
-            Videogame <br>
-            November 2019 <br>
-            <a target="_blank" href="https://laudvg.github.io/BurguerKills/">See More</a>
-          </p>
-          <img src="./img/fgportada.png" alt="">
+        <div class="project">
+          <div class="project-text" data-aos="fade-left">
+            <h1 class="project-name">Burguer Kills</h1>
+            <p class="project-description">
+              Videogame </p>
+            <a class="link" target="_blank" href="https://laudvg.github.io/BurguerKills/">See More&nbsp;</a>
+            <a class="link" target="_blank" href="https://github.com/laudvg/BurguerKills">&nbsp;Code</a>
+            
+          </div>
+
+          <img class="project-image" src="./img/fgportada.png" alt="">
         </div>
-        <div class="project" data-aos="fade-right"  data-aos-offset="500" data-aos-easing="ease-in-out" data-aos-mirror="true">
-          <h2 class="project-name">Until Sunrise</h2>
-          <p class="project-description">
-            Fullstack Web Api<br>
-            November 2019 <br>
-            <a target="_blank" href="https://laudvg.github.io/BurguerKills/">See More</a>
-          </p>
-          <img src="./img/until_portada.png" alt="" >
+        <div class="project">
+          <div class="project-text" data-aos="fade-right">
+            <h1 class="project-name">Until Sunrise</h1>
+            <p class="project-description">
+              Fullstack Web Api</p>
+            <a class="link" target="_blank" href="http://until-sunrise.herokuapp.com/auth/login">See More&nbsp; </a>
+            <a class="link" target="_blank" href="https://github.com/Ironhack-P2-EC-LV/Ironhack-p2-estefania-laura">&nbsp;Code</a>
+            
+          </div>
+
+          <img class="project-image" src="./img/until_portada.png" alt="">
         </div>
-        <div class="project"data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-out" data-aos-mirror="true">
-          <h2 class="project-name">Friendzone</h2>
-          <p class="project-description">
-            Fullstack Web Api<br>
-            November 2019 <br>
-            <a target="_blank" href="https://hello-friendzone.herokuapp.com/">See More</a>
-          </p>
-          <img src="./img/friendzone_portada.png" alt="">
+        <div class="project">
+          <div class="project-text" data-aos="fade-left">
+            <h1 class="project-name">Friendzone</h1>
+            <p class="project-description">
+              Fullstack Web Api</p>
+            <a class="link" target="_blank" href="https://hello-friendzone.herokuapp.com/">See More&nbsp; </a>
+            <a class="link" target="_blank" href="https://github.com/laudvg/Friendzone">&nbsp;Code</a>
+          </div>
+          <img class="project-image" src="./img/friendzone_portada.png" alt="">
         </div>
       </div>
-  </div>
-
-    <div class="soft-skills">
-      <h1>SOFT-SKILLS</h1>
-      <li>
-        <ul>Ease of learning.</ul>
-        <ul>Ability to work in teams.</ul>
-        <ul>Persistence and perseverance.</ul>
-        <ul>Good communication skills.</ul>
-        <ul>Creativity.</ul>
-      </li>
     </div>
-  </div>
+          
+          <div class="soft-skills">
+            <h1>SOFT-SKILLS</h1>
+            <li>
+              <ul>Ease of learning.</ul>
+              <ul>Ability to work in teams.</ul>
+              <ul>Persistence and perseverance.</ul>
+              <ul>Good communication skills.</ul>
+              <ul>Creativity.</ul>
+            </li>
+          </div>
+          </div>
 
   <div class="soft-skills">
     <h1>EDUCATION</h1>
@@ -89,9 +96,12 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>   
-  AOS.init(
-  
-  ); 
+  AOS.init({    
+    offset:300,
+    easing: "ease-in-out",
+    anchorPlacement: "top-top",
+    // mirror: false,
+  }); 
 </script>
 
 </body>
